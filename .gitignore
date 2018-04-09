@@ -17,5 +17,8 @@ tests/.coverage
 build/
 tests/report/
 
+# Pycharm File
+.idea/*
+
 # db django
 *.sqlite3
