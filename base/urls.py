@@ -25,5 +25,8 @@ urlpatterns = [
     url(r'^connexion$', LoginUser.as_view(), name="connexion"),
     url(r'^logout$', LogoutUser.as_view(), name='logout'),
     url(r'^$', login_required(TemplateView.as_view(template_name='index.html'))),
+    url(r'^maison$', login_required(TemplateView.as_view(template_name='home.html'))),
+
+    url(r'^$', login_required(TemplateView.as_view(template_name='index.html'))),
     ]
 
