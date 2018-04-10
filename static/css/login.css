@@ -17,3 +17,18 @@
     padding-bottom: 20px;
     letter-spacing: 5px;
 }
+
+
+.avatar_img{
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 10%;
+}
+
+.logo_user{
+    max-width: 45px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+}
+

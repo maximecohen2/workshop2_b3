@@ -22,6 +22,6 @@ from base.views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', home, name='home'),
-    url(r'^login$', TemplateView.as_view(template_name='login.html'))
-
+    url(r'^login$', TemplateView.as_view(template_name='login.html')),
+    url(r'^maison$', TemplateView.as_view(template_name='home.html'))
 ]
