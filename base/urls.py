@@ -17,15 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 from django.views.generic import TemplateView
-from user.views import user
-from login.views import LoginView, LogoutView
-from base.views import home
+from user.views import LoginUser, LogoutUser
 from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^connexion$', LoginView.as_view(), name="connexion"),
-    url(r'^logout/$', LogoutView.as_view(), name='logout'),
+    url(r'^connexion$', LoginUser.as_view(), name="connexion"),
+    url(r'^logout$', LogoutUser.as_view(), name='logout'),
     url(r'^$', login_required(TemplateView.as_view(template_name='index.html'))),
     ]
 
