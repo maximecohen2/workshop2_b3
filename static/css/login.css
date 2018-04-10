@@ -32,3 +32,24 @@
     border-radius:25px;
 }
 
+.logo_github{
+    max-width: 20px;
+}
+
+.push{
+    color:blue;
+}
+
+.branch{
+    color:red;
+}
+
+.commit_number{
+    color : red;
+    font-size: 12px;
+}
+
+.repo{
+    color:grey;
+    font-size: 12px;
+}
