@@ -8,7 +8,7 @@ class Project(models.Model):
 
     name = models.CharField(max_length=100, verbose_name="nom")
     description = models.TextField(blank=True, verbose_name="description")
-    file = models.FileField(verbose_name="fichier")
+    file = models.FileField(verbose_name="fichier", null=True, blank=True)
 
     class Meta:
         verbose_name = "Projet"
