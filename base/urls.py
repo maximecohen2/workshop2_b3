@@ -17,12 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 from django.views.generic import TemplateView
-from user.views import UserView
+from user.views import user
 from base.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('user/', UserView.post_list),
+    path('user/', user),
     url(r'^$', home, name='home'),
     url(r'^login$', TemplateView.as_view(template_name='login.html'))
     ]
