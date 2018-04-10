@@ -6,6 +6,8 @@ from django.conf import settings
 
 
 class LoginView(TemplateView):
+    template_name = "login.html"
+
     def post(self, request, **kwargs):
         username = request.POST.get('username', False)
         password = request.POST.get('password', False)
