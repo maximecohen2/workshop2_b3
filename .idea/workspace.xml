@@ -2,137 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e6613b6-30ed-4fca-81d3-b69d44439c10" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/sb-admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/sb-admin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sb-admin-charts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sb-admin-charts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sb-admin-datatables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sb-admin-datatables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sb-admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/sb-admin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/blank.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/cards.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/charts.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/forgot-password.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/includes/css/core.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/includes/css/custom.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/includes/footer.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/includes/js/core.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/includes/js/custom.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/includes/modals/logout.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/includes/navbar.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/includes/scroll-to-top.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/index.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/login.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/navbar.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/register.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pug/tables.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/_login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/navbar/_navbar_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/navbar/_navbar_fixed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/navbar/_navbar_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/navbar/_navbar_static.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/navbar/_navbar_toggle.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scss/sb-admin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/chart.js/Chart.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/chart.js/Chart.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/chart.js/Chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/chart.js/Chart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/datatables/dataTables.bootstrap4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/datatables/dataTables.bootstrap4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/datatables/jquery.dataTables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/css/font-awesome.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/font-awesome/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/jquery-easing/jquery.easing.compatibility.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/jquery-easing/jquery.easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/jquery-easing/jquery.easing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blank.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cards.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/charts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/forgot-password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/tables.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workshop2_b3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workshop2_b3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -149,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="1" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="36">
+              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -167,10 +38,18 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="144">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/layout.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
@@ -513,8 +392,8 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32929516" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32929516" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32929516" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.33114034" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32929516" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.33039647" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18803419" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -554,6 +433,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -643,13 +525,6 @@
     <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="1" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -697,10 +572,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="144">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

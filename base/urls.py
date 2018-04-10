@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
+<<<<<<< HEAD
 from django.views.generic import TemplateView
 from user.views import UserView
 
@@ -23,4 +24,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', UserView.post_list),
     url(r'^$', TemplateView.as_view(template_name='index.html'))
+=======
+from base.views import home
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    url(r'^$', home, name='home')
+>>>>>>> 962eb679815205018346798d1fdf45a81ecaf6ad
 ]
