@@ -6,5 +6,6 @@ from django.views.generic import DetailView
 
 
 class UserView(DetailView):
-    def post_list(request, ):
+    def post_list():
+        pass
 
