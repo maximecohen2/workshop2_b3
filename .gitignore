@@ -18,7 +18,7 @@ build/
 tests/report/
 
 # Pycharm File
-.idea/*
+.idea/
 
 # db django
 *.sqlite3
