@@ -23,8 +23,7 @@
                 <tr>
                   <th>Nom</th>
                   <th>Date de début</th>
-                  <th>Jetons Total</th>
-                  <th>Jetons Utilisés</th>
+                  <th>Jetons Attribués</th>
                   <th>Date de fin</th>
                 </tr>
               </thead>
@@ -32,18 +31,16 @@
                 <tr>
                   <th>Nom</th>
                   <th>Date de début</th>
-                  <th>Jetons Total</th>
-                  <th>Jetons Utilisés</th>
+                  <th>Jetons Attribués</th>
                   <th>Date de fin</th>
                 </tr>
               </tfoot>
               <tbody>
               {% for project in projects %}
                 <tr>
-                    <td>{{ project.name }}  </td>
+                  <td><a href="#">{{ project.name }}</a>  </td>
                     <td>{{ project.date_start }}  </td>
                     <td>{{ project.token }}  </td>
-                    <td>{{ project.token_used }}  </td>
                     <td>{{ project.date_end }}  </td>
                 </tr>
               {% endfor %}
