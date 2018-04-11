@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^delete$', login_required(DeleteProject.as_view()), name='delete'),
     url(r'^create$', login_required(CreateProject.as_view()), name='create'),
     url(r'^update$', login_required(UpdateProject.as_view()), name='update'),
+    url(r'^$', login_required(ListProject.as_view()), name='list'),
     ]

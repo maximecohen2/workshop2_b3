@@ -9,8 +9,10 @@ class Project(models.Model):
     name = models.CharField(max_length=100, verbose_name="nom")
     description = models.TextField(blank=True, verbose_name="description")
     file = models.FileField(verbose_name="fichier", null=True, blank=True)
-    date_start = models.TimeField(verbose_name='date de depart du projet')
-    date_end = models.TimeField(verbose_name='date de fin du projet')
+    date_start = models.DateField(verbose_name='date de depart du projet')
+    date_end = models.DateField(verbose_name='date de fin du projet')
+    token = models.IntegerField(verbose_name='nombre de jetons actuel')
+    token_used = models.IntegerField(verbose_name='nombre de jetons utilisé')
 
     class Meta:
         verbose_name = "Projet"
