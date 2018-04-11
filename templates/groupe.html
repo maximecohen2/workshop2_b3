@@ -1,0 +1,199 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- Bootstrap core CSS-->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="{% static 'css/sb-admin.css' %}" rel="stylesheet">
+  <link href="{% static 'css/groupe.css' %}" rel="stylesheet">
+<div class="row">
+    <div class="col-lg-8">
+        <!-- Infos utilisateur Card-->
+        <div class="card mb-3">
+            <div class="card-header">
+                 Coaching</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-10 my-auto">
+                      <table class="coaching">
+                        <thead>
+                          <th>Intervenant</th>
+                          <th>Prix estimé</th>
+                          <th>Statut</th>
+                          <th>Prix final</th>
+                        </thead>
+                        <tr>
+                          <td>Phillipe rouchaud</td>
+                          <td>1 jeton</td>
+                          <td>En attente de validation</td>
+                          <td>? </td>
+                        </tr>
+                        <tr>
+                          <td>Michel Gillet</td>
+                          <td>10 jetons</td>
+                          <td>En attente de coaching</td>
+                          <td>? </td>
+                        </tr>
+                        <tr>
+                          <td>Patrice Got</td>
+                          <td>5 jetons</td>
+                          <td>Terminée</td>
+                          <td>5 </td>
+                        </tr>
+                      </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                 Groupe AskMe</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-8 my-auto">
+                       <img class ="avatar_img" src="{% static 'img/askme.png' %}" alt="logo.png"/>
+                    </div>
+                    <div class="col-sm-4  my-auto">
+                        <div class="mb-1">Liste des membres :</div>
+                        <div class="mb-1 text-muted"><a title="Voir le profil de l'utilisateur" href="#">Arnaud Malin</a></div>
+                        <div class="mb-1 text-muted"><a title="Voir le profil de l'utilisateur" href="#">Cédric Clémenceau</a></div>
+                        <div class="mb-1 text-muted"><a title="Voir le profil de l'utilisateur" href="#">Maxime Cohen</a></div>
+                        <div class="mb-1 text-muted"><a title="Voir le profil de l'utilisateur" href="#">Quentin Doret</a></div>
+                        <hr>
+                      <div class="text-muted">Mail du groupe :</div>
+                      <div class="text-muted"><a href="#" >revytwohands@iluvguns.fr</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card Columns Example Social Feed-->
+        <div class="mb-0 mt-4">
+            <i class="fa fa-newspaper-o"></i> Projets de Revy</div>
+        <hr class="mt-2">
+        <div class="card-columns">
+            <!-- Example Social Card-->
+            <div class="card mb-3">
+                <a href="#">
+                    <img class="card-img-top img-fluid w-100" src="{% static 'img/FinTech.jpg' %}" alt="">
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title mb-1"><a href="#">Projet FinTech</a></h6>
+
+
+                    <p class="card-text small">
+                      Nunc et semper mauris, eu varius mauris.
+                      Nunc justo turpis, consectetur eu aliquet a, volutpat id elit.
+                      Morbi pulvinar arcu urna, vitae ornare nisi vehicula vel.
+                      Nulla id odio eros. Duis imperdiet maximus laoreet. In nec aliquet ligula.
+                      Nullam ut odio sem. Proin quis ullamcorper diam, eget sollicitudin massa.
+                      Mauris pretium nec augue at porta. Duis euismod vulputate scelerisque.
+                      Phasellus fringilla sapien vitae magna porttitor porta.
+                      Curabitur scelerisque elit vel placerat cursus.
+                      Maecenas fringilla sit amet elit sit amet ullamcorper.
+                      Etiam at feugiat odio, vel tincidunt lectus.
+                      Proin libero urna, pellentesque in sollicitudin auctor, commodo eu dolor.
+                      Pellentesque pellentesque auctor lorem, ac lobortis arcu consequat sed.
+                    </p>
+
+                </div>
+            </div>
+            <!-- Example Social Card-->
+            <div class="card mb-3">
+                <a href="#">
+                    <img class="card-img-top img-fluid w-100" src="{% static 'img/javaee.png' %}" alt="">
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title mb-1"><a href="#">Projet Java EE</a></h6>
+                    <p class="card-text small">
+                      Vestibulum id mattis leo, eget consectetur tortor.
+                      Mauris mollis metus et lacinia ullamcorper.
+                      Quisque in odio non velit imperdiet dignissim.
+                      Proin iaculis risus est, id rhoncus quam fermentum et.
+                      Vivamus sit amet tincidunt tortor, sed pellentesque felis.
+                      Nam quis eros consectetur, fringilla ex nec, sagittis arcu.
+                      Ut dapibus enim nisl, eu commodo lorem facilisis a.
+                      Maecenas eget dui finibus, efficitur nulla ut, luctus dui.
+                      Proin ante dolor, elementum eu rhoncus et, hendrerit ac lacus.
+                      Fusce lacinia et tellus at volutpat.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /Card Columns-->
+    </div>
+    <div class="col-lg-4">
+        <!-- Example Pie Chart Card-->
+        <div class="card mb-3">
+            <div class="card-header">
+                 <i class="fa fa-bell-o"></i> Utilisation des Jetons</div>
+              <div class="card-body">
+
+                <div>Jetons attribués :  50 </div>
+                <hr>
+                <div>Jetons restants : 35 </div>
+                <hr>
+                <div class="mb-1">Dernières dépenses : </div>
+                <div class="text-muted">Patrice GOT : 5 jetons</div>
+                <div class="text-muted">Michel Gillet : 10 jetons</div>
+                <!-- fin foreach -->
+            </div>
+        </div>
+        <!-- Example Notifications Card-->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-bell-o"></i> Derniers commits de Askme</div>
+
+                <div class="list-group-item list-group-item-action">
+                    <div class="media">
+                        <img class="d-flex mr-3 rounded-circle logo_user" src="{% static 'img/logo_max_git.png' %}" alt="">
+                        <div class="media-body">
+
+                            <strong>Maxime</strong>
+                          pushed <span class="push">1 new commit</span> to <span class="branch">master</span>
+                          <span class="commit_number">`62c2edce`</span> - Feat(home.html, login.css) change le front.
+                           <div class="github">
+                             <img class="logo_github" src ="{% static 'img/logo_github.png' %}"/>
+                             <span class="repo">maximecohen2/workshop2_b3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <div class="media">
+                        <img class="d-flex mr-3 rounded-circle logo_user" src="{% static 'img/cedric.jpg' %}" alt="">
+                        <div class="media-body">
+
+                            <strong>Cédric</strong>
+                          pushed <span class="push">2 new commit</span> to <span class="branch">master</span>
+                          <div><span class="commit_number">`b79be837`</span> - Ajout des logos</div>
+                          <div><span class="commit_number">`71e977fb`</span> - Merge des branches</div>
+                           <div class="github">
+                             <img class="logo_github" src ="{% static 'img/logo_github.png' %}"/>
+                             <span class="repo">maximecohen2/workshop2_b3</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <div class="media">
+                        <img class="d-flex mr-3 rounded-circle logo_user" src="{% static 'img/logo_user.jpg' %}" alt="">
+                        <div class="media-body">
+
+                            <strong>Quentin</strong>
+                          pushed <span class="push">1 new commit</span> to <span class="branch">master</span>
+                          <div><span class="commit_number">`de4033e5`</span> - Debug(login.html)</div>
+                           <div class="github">
+                             <img class="logo_github" src ="{% static 'img/logo_github.png' %}"/>
+                             <span class="repo">maximecohen2/workshop2_b3</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
