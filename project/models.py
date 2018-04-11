@@ -9,6 +9,8 @@ class Project(models.Model):
     name = models.CharField(max_length=100, verbose_name="nom")
     description = models.TextField(blank=True, verbose_name="description")
     file = models.FileField(verbose_name="fichier", null=True, blank=True)
+    date_start = models.TimeField(verbose_name='date de depart du projet')
+    date_end = models.TimeField(verbose_name='date de fin du projet')
 
     class Meta:
         verbose_name = "Projet"
