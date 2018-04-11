@@ -29,8 +29,8 @@ urlpatterns = [
     url(r'^home$', HomeUserAsk.as_view()),
     url(r'^connexion$', LoginUserAsk.as_view(), name="connexion"),
     url(r'^logout$', LogoutUserAsk.as_view(), name='logout'),
-    url(r'^profil$', login_required(TemplateView.as_view(template_name='profil.html'))),
+    url(r'^profil$', DetailUserAsk.as_view(), name="profil"),
     url(r'^groupe$', login_required(TemplateView.as_view(template_name='groupe.html'))),
-url(r'^project-list', login_required(TemplateView.as_view(template_name='project-list.html'))),
+    url(r'^project-list', login_required(TemplateView.as_view(template_name='project-list.html'))),
     ]
 

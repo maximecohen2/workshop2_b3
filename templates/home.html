@@ -1,14 +1,15 @@
 {% extends 'layout.html' %}
 {% load static %}
 
+{% block css %}
+    <link href="{% static 'css/groupe.css' %}" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
-  <!-- Bootstrap core CSS-->
-  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <!-- Custom fonts for this template-->
-  <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-  <!-- Custom styles for this template-->
-  <link href="{% static 'css/sb-admin.css' %}" rel="stylesheet">
-  <link href="{% static 'css/groupe.css' %}" rel="stylesheet">
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+    </ol>
 <!-- Icon Cards-->
 
 <!-- Area Chart Example-->

@@ -31,4 +31,13 @@ class HomeUserAsk(LoginRequiredMixin, TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(HomeUserAsk, self).get_context_data(**kwargs)
+        context['page_title'] = "Accueil"
+        return context
+
+
+class DetailUserAsk(LoginRequiredMixin, DetailView):
+    template_name = "profil.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(HomeUserAsk, self).get_context_data(**kwargs)
         return context
