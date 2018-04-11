@@ -1,4 +1,3 @@
-
 .avatar_img{
     max-width: 200px;
     max-height: 200px;
@@ -33,4 +32,8 @@
 .repo{
     color:grey;
     font-size: 12px;
+}
+
+.coaching{
+    text-align: center;
 }
