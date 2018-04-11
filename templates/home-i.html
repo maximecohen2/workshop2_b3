@@ -1,1 +1,132 @@
-HOME DE LINTERVENANT WESH
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block css %}
+    <link href="{% static 'css/groupe.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+    </ol>
+<!-- Icon Cards-->
+    <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Mes demandes</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Date demande</th>
+                  <th>Cout</th>
+                  <th>Etats</th>
+                  <th>Groupe</th>
+                  <th>Demande</th>
+                  <th>Réponse</th>
+                  <th>Date de cloture</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Date du jeton</th>
+                  <th>Cout</th>
+                  <th>Etats</th>
+                  <th>Groupe</th>
+                  <th>Demande</th>
+                  <th>Réponse</th>
+                  <th>Date de cloture</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>10/04/2018</td>
+                  <td>10</td>
+                  <td>Soumis</td>
+                  <td>Askme</td>
+                  <td>Je souhaite mettre à jour un champ</td>
+                  <td>Et bien bonne chance :-)</td>
+                  <td>En cours</td>
+                </tr>
+                <tr>
+                  <td>10/04/2018</td>
+                  <td>5</td>
+                  <td>Cloturé</td>
+                  <td>Big flo & oli</td>
+                  <td>Comment créer une base de données ?</td>
+                  <td>Il fallait suivre mes cours !!!</td>
+                  <td>Terminé</td>
+                </tr>
+                <tr>
+                  <td>12/04/2018</td>
+                  <td>3</td>
+                  <td>En attente</td>
+                  <td>Les inconnus</td>
+                  <td>Peut-on avoir des crédits en plus ?</td>
+                  <td>Je demande au National</td>
+                  <td>En attente</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+     </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Mes jetons gagnés</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Nombre</th>
+                  <th>Groupe</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+
+                  <th>Date</th>
+                  <th>Nombre</th>
+                  <th>Groupe</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>10/04/2018</td>
+                  <td>10</td>
+                  <td>Askme</td>
+                </tr>
+                <tr>
+                  <td>10/04/2018</td>
+                  <td>5</td>
+                  <td>Big flo & oli</td>
+                </tr>
+                <tr>
+                  <td>12/04/2018</td>
+                  <td>3</td>
+                  <td>Les inconnus</td>
+                </tr>
+                <tr>
+                  <td>12/04/2018</td>
+                  <td>3</td>
+                  <td>Les inconnus</td>
+                </tr>
+                <tr>
+                  <td>12/04/2018</td>
+                  <td>3</td>
+                  <td>Les inconnus</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 style="text-align: center">Total de jetons gagnés : 24</h5>
+          </div>
+        </div>
+     </div>
+
+
+
+{% endblock %}
