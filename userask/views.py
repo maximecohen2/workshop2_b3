@@ -1,6 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
-from django.views.generic import DetailView, TemplateView
+from django.views.generic import *
 from django.contrib.auth import authenticate, login, logout
 from django.http import *
 
@@ -31,4 +31,18 @@ class HomeUserAsk(LoginRequiredMixin, TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(HomeUserAsk, self).get_context_data(**kwargs)
+        context['page_title'] = "Accueil"
         return context
+
+
+class ListUserAsk(LoginRequiredMixin, ListView):
+    template_name = "user/list-user.html"
+
+
+class DetailUserAsk(LoginRequiredMixin, DetailView):
+    template_name = "user/detail-user.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(DetailUserAsk, self).get_context_data(**kwargs)
+        return context
+
