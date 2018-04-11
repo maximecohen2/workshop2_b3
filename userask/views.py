@@ -30,7 +30,7 @@ class LogoutUserAsk(LoginRequiredMixin, TemplateView):
 
 
 class HomeUserAsk(LoginRequiredMixin, TemplateView):
-    template_name = "home.html"
+    template_name = "home-e.html"
 
     def get_context_data(self, **kwargs):
         context = super(HomeUserAsk, self).get_context_data(**kwargs)
