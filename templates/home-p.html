@@ -1,4 +1,121 @@
 {% extends 'layout.html' %}
 {% load static %}
 
-<p>HOME DE LA PEDAGOGIE UESH</p>
+{% block css %}
+    <link href="{% static 'css/groupe.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+    </ol>
+<!-- Icon Cards-->
+    <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Demandes en attente de salle</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Date demande</th>
+                  <th>Groupe</th>
+                  <th>Intervenant</th>
+                  <th>Statut</th>
+                  <th>Gérer</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Date demande</th>
+                  <th>Groupe</th>
+                  <th>Intervenant</th>
+                  <th>Statut</th>
+                  <th>Gérer</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>10/04/2018</td>
+                  <td>AskMe</td>
+                  <td>Michel Gillet</td>
+                  <td>A traiter</td>
+                  <td><a href="#">Gérer</a></td>
+                </tr>
+                <tr>
+                  <td>10/04/2018</td>
+                  <td>Les inconnus</td>
+                  <td>Patrice Got</td>
+                  <td>Traitée</td>
+                  <td><a href="#">Archiver</a></td>
+                </tr>
+                <tr>
+                  <td>12/04/2018</td>
+                  <td>Big Flo & Oli</td>
+                  <td>Philippe Rouchaud</td>
+                  <td>Annulée</td>
+                  <td><a href="#">Archiver</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+     </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Jetons pour le mois d'avril</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Intervenant</th>
+                  <th>Nombre Jetons</th>
+                  <th>Nombre interventions physiques</th>
+                  <th>Nombre interventions par chat</th>
+                  <th>Nombre interventions par mail</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Intervenant</th>
+                  <th>Nombre Jetons</th>
+                  <th>Nombre interventions physiques</th>
+                  <th>Nombre interventions par chat</th>
+                  <th>Nombre interventions par mail</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>Michel Gillet</td>
+                  <td>25</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Patrice Got</td>
+                  <td>50</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Philippe Rouchaud</td>
+                  <td>20</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>20</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+     </div>
+
+
+
+{% endblock %}
