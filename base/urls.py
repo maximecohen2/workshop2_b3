@@ -17,14 +17,22 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
 from django.views.generic import TemplateView
-from user.views import LoginUser, LogoutUser
+from userask.views import *
 from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
+    # page admin de django
     path('admin/', admin.site.urls),
-    url(r'^connexion$', LoginUser.as_view(), name="connexion"),
-    url(r'^logout$', LogoutUser.as_view(), name='logout'),
-    url(r'^$', login_required(TemplateView.as_view(template_name='index.html'))),
-    url(r'^maison$', login_required(TemplateView.as_view(template_name='home.html'))),
+
+    # page du sites
+    url(r'^$', HomeUserAsk.as_view(), name="home"),
+    url(r'^home$', HomeUserAsk.as_view()),
+    url(r'^connexion$', LoginUserAsk.as_view(), name="connexion"),
+    url(r'^logout$', LogoutUserAsk.as_view(), name='logout'),
+    url(r'^profil$', DetailUserAsk.as_view(), name="profil"),
+    url(r'^team$', login_required(TemplateView.as_view(template_name='team/detail-team.html'))),
+    url(r'^project-list', login_required(TemplateView.as_view(template_name='project/list-project.html'))),
+    url(r'^jetons-list', login_required(TemplateView.as_view(template_name='jetons-list.html'))),
     url(r'^project/', include('project.urls')),
-    ]
+]
+
