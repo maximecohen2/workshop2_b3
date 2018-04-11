@@ -1,8 +1,11 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render
+from django.contrib.auth.models import User
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import *
 from django.contrib.auth import authenticate, login, logout
 from django.http import *
+
+from userask.models import UserAsk
 
 
 class LoginUserAsk(TemplateView):
@@ -39,10 +42,11 @@ class ListUserAsk(LoginRequiredMixin, ListView):
     template_name = "user/list-user.html"
 
 
-class DetailUserAsk(LoginRequiredMixin, DetailView):
+class ProfilUserAsk(LoginRequiredMixin, TemplateView):
     template_name = "user/detail-user.html"
 
     def get_context_data(self, **kwargs):
-        context = super(DetailUserAsk, self).get_context_data(**kwargs)
+        context = super(ProfilUserAsk, self).get_context_data(**kwargs)
+        context['user'] = User.objects.select_related('userask').get(pk=self.request.user.id)
         return context
 

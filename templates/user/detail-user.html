@@ -14,21 +14,22 @@
         <!-- Infos utilisateur Card-->
         <div class="card mb-3">
             <div class="card-header">
-                 Profil de Revy</div>
+                 Profil de {{ user.username }}
+            </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-8 my-auto">
-                       <img class ="avatar_img" src="{% static 'img/chibirevy.png' %}" alt="logo.png"/>
+                       <img class ="avatar_img" src="{{ user.userask.image }}" alt="logo.png"/>
                     </div>
                     <div class="col-sm-4  my-auto">
                         <div class="mb-0 text-muted">Prénom :</div>
-                        <div class="text-muted">Revy</div>
+                        <div class="text-muted">{{ user.first_name }}</div>
                         <hr>
                         <div class="mb-0 text-muted">Nom :</div>
-                        <div class="text-muted">TwoHands</div>
+                        <div class="text-muted">{{ user.last_name }}</div>
                         <hr>
                         <div class="mb-0 text-muted">Mail : </div>
-                        <div class="text-muted">revytwohands@iluvguns.fr</div>
+                        <div class="text-muted">{{ user.email }}</div>
                     </div>
                 </div>
             </div>
