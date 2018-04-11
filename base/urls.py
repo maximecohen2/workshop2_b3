@@ -32,5 +32,6 @@ urlpatterns = [
     url(r'^profil$', DetailUserAsk.as_view(), name="profil"),
     url(r'^groupe$', login_required(TemplateView.as_view(template_name='groupe.html'))),
     url(r'^project-list', login_required(TemplateView.as_view(template_name='project-list.html'))),
+    url(r'^jetons-list', login_required(TemplateView.as_view(template_name='jetons-list.html'))),
     ]
 
