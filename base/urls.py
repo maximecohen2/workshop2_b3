@@ -40,6 +40,7 @@ urlpatterns = [
     url(r'^home-e$', login_required(TemplateView.as_view(template_name='home-e.html'))),
     url(r'^home-i$', login_required(TemplateView.as_view(template_name='home-i.html'))),
     url(r'^home-p$', login_required(TemplateView.as_view(template_name='home-p.html'))),
+    url(r'^project$', login_required(TemplateView.as_view(template_name='project/detail-project.html'))),
 ]
 
 if settings.DEBUG is True:
