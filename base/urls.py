@@ -19,6 +19,8 @@ from django.conf.urls import url
 from django.views.generic import TemplateView
 from userask.views import *
 from django.contrib.auth.decorators import login_required
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     # page admin de django
@@ -34,5 +36,11 @@ urlpatterns = [
     url(r'^project-list', login_required(TemplateView.as_view(template_name='project/list-project.html'))),
     url(r'^jetons-list', login_required(TemplateView.as_view(template_name='jetons-list.html'))),
     url(r'^project/', include('project.urls')),
+
+    url(r'^home-e$', login_required(TemplateView.as_view(template_name='home-e.html'))),
+    url(r'^home-i$', login_required(TemplateView.as_view(template_name='home-i.html'))),
+    url(r'^home-p$', login_required(TemplateView.as_view(template_name='home-p.html'))),
 ]
 
+if settings.DEBUG is True:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

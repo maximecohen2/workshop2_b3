@@ -22,3 +22,6 @@ tests/report/
 
 # db django
 *.sqlite3
+
+# media folder
+media/
