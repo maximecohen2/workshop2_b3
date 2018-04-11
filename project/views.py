@@ -4,6 +4,14 @@ from django.views.generic import *
 import datetime
 
 
+class ListProject(ListView):
+    template_name = 'project/list-project.html'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(ListProject, self).get_context_data(**kwargs)
+        return context
+
+
 class CreateProject(CreateView):
     name = None
     description = None
