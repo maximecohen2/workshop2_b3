@@ -1,11 +1,11 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
-from django.http import HttpResponse
 from django.views.generic import DetailView, TemplateView
 from django.contrib.auth import authenticate, login, logout
 from django.http import *
 
 
-class LoginUser(TemplateView):
+class LoginUserAsk(TemplateView):
     template_name = "login.html"
 
     def post(self, request, **kwargs):
@@ -19,7 +19,16 @@ class LoginUser(TemplateView):
         return render(request, self.template_name)
 
 
-class LogoutUser(TemplateView):
+class LogoutUserAsk(LoginRequiredMixin, TemplateView):
+
     def get(self, request, **kwargs):
         logout(request)
         return HttpResponseRedirect('/')
+
+
+class HomeUserAsk(LoginRequiredMixin, TemplateView):
+    template_name = "home.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(HomeUserAsk, self).get_context_data(**kwargs)
+        return context
