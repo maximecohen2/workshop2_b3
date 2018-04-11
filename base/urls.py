@@ -17,17 +17,19 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 from django.views.generic import TemplateView
-from user.views import LoginUser, LogoutUser
+from userask.views import *
 from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
+    # page admin de django
     path('admin/', admin.site.urls),
-    url(r'^connexion$', LoginUser.as_view(), name="connexion"),
-    url(r'^logout$', LogoutUser.as_view(), name='logout'),
-    url(r'^$', login_required(TemplateView.as_view(template_name='index.html'))),
-    url(r'^profil', login_required(TemplateView.as_view(template_name='profil.html'))),
-    url(r'^groupe', login_required(TemplateView.as_view(template_name='groupe.html'))),
 
-    url(r'^$', login_required(TemplateView.as_view(template_name='index.html'))),
+    # page du sites
+    url(r'^$', HomeUserAsk.as_view(), name="home"),
+    url(r'^home$', HomeUserAsk.as_view()),
+    url(r'^connexion$', LoginUserAsk.as_view(), name="connexion"),
+    url(r'^logout$', LogoutUserAsk.as_view(), name='logout'),
+    url(r'^profil$', login_required(TemplateView.as_view(template_name='profil.html'))),
+    url(r'^groupe$', login_required(TemplateView.as_view(template_name='groupe.html'))),
     ]
 
