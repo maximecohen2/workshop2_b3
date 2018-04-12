@@ -14,6 +14,11 @@ class DetailProject(DetailView):
     model = Project
     context_object_name = "project"
 
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(DetailProject, self).get_context_data(**kwargs)
+        context['teams'] = Team.objects.filter(project_id=int(self.kwargs['pk']))
+        return context
+
 
 class ListProject(ListView):
     template_name = 'project/list-project.html'

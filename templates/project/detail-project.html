@@ -68,13 +68,12 @@
                 </tr>
               </tfoot>
               <tbody>
-              {% for project in projects %}
-                <tr>
-                  <td><a href="#">{{ project.name }}</a>  </td>
-                    <td>{{ project.date_start }}  </td>
-                    <td>{{ project.token }}  </td>
-                    <td>{{ project.date_end }}  </td>
-                </tr>
+              {% for team in teams %}
+                  <tr>
+                      <td><a href="{% url 'detailGroup' team.id %}">{{ team.name }}</a>  </td>
+                      <td>{{ team.users.count }}  </td>
+                      <td>{{ team.token_remain }}  </td>
+                  </tr>
               {% endfor %}
               </tbody>
             </table>
