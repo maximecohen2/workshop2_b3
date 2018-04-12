@@ -54,109 +54,34 @@
           <div class="mb-0 mt-4">
             <i class="fa fa-newspaper-o"></i> Liste des Groupes sur ce projet</div>
         <hr class="mt-2">
-        <div class="row">
-            <div class="card mb-3 col-sm-3">
-                <a href="#">
-                    <img class="card-img-top img-fluid w-100" src="{% static 'img/2.jpg' %}" alt="">
-                </a>
-                <div class="card-body">
-                    <h6 class="card-title mb-1"><a href="#">Projet FinTech</a></h6>
-                    <p class="card-text small">
-                      Nunc et semper mauris, eu varius mauris.
-                    </p>
-                </div>
-            </div>
-            <div class="card mb-3 col-lg-3">
-                <a href="#">
-                    <img class="card-img-top img-fluid w-100" src="{% static 'img/3.jpg' %}" alt="">
-                </a>
-                <div class="card-body">
-                    <h6 class="card-title mb-1"><a href="#">Projet FinTech</a></h6>
-
-
-                    <p class="card-text small">
-                      Nunc et semper mauris, eu varius mauris.
-                    </p>
-
-                </div>
-            </div>
-            <div class="card mb-3 col-sm-3">
-                <a href="#">
-                    <img class="card-img-top img-fluid w-100" src="{% static 'img/4.jpg' %}" alt="">
-                </a>
-                <div class="card-body">
-                    <h6 class="card-title mb-1"><a href="#">Projet FinTech</a></h6>
-
-
-                    <p class="card-text small">
-                      Nunc et semper mauris, eu varius mauris.
-                    </p>
-
-                </div>
-            </div>
-            <div class="card mb-3 col-sm-3">
-                <a href="#">
-                    <img class="card-img-top img-fluid w-100" src="{% static 'img/5.jpg' %}" alt="">
-                </a>
-                <div class="card-body">
-                    <h6 class="card-title mb-1"><a href="#">Projet FinTech</a></h6>
-
-
-                    <p class="card-text small">
-                      Nunc et semper mauris, eu varius mauris.
-                    </p>
-
-                </div>
-            </div>
-            <div class="card mb-3 col-lg-3">
-                <a href="#">
-                    <img class="card-img-top img-fluid w-100" src="{% static 'img/6.jpg' %}" alt="">
-                </a>
-                <div class="card-body">
-                    <h6 class="card-title mb-1"><a href="#">Projet </a></h6>
-
-
-                    <p class="card-text small">
-                      Nunc et semper mauris, eu varius mauris.
-                    </p>
-
-                </div>
-            </div>
-            <div class="card mb-3 col-lg-3">
-                <a href="#">
-                    <img class="card-img-top img-fluid w-100" src="{% static 'img/7.jpg' %}" alt="">
-                </a>
-                <div class="card-body">
-                    <h6 class="card-title mb-1"><a href="#">Projet </a></h6>
-                    <p class="card-text small">
-                      Nunc et semper mauris, eu varius mauris.
-                    </p>
-
-                </div>
-            </div>
-            <div class="card mb-3 col-lg-3">
-                <a href="#">
-                    <img class="card-img-top img-fluid w-100" src="{% static 'img/FinTech.jpg' %}" alt="">
-                </a>
-                <div class="card-body">
-                    <h6 class="card-title mb-1"><a href="#">Projet </a></h6>
-                    <p class="card-text small">
-                      Nunc et semper mauris, eu varius mauris.
-                    </p>
-
-                </div>
-            </div>
-            <div class="card mb-3 col-lg-3">
-                <a href="#">
-                    <img class="card-img-top img-fluid w-100" src="{% static 'img/1.jpg' %}" alt="">
-                </a>
-                <div class="card-body">
-                    <h6 class="card-title mb-1"><a href="#">Projet </a></h6>
-                    <p class="card-text small">
-                      Nunc et semper mauris, eu varius mauris.
-                    </p>
-
-                </div>
-            </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Nom</th>
+                  <th>Nombre de menbres</th>
+                  <th>Jetons Attribués</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Nom</th>
+                  <th>Nombre de menbres</th>
+                  <th>Jetons Attribués</th>
+                </tr>
+              </tfoot>
+              <tbody>
+              {% for project in projects %}
+                <tr>
+                  <td><a href="#">{{ project.name }}</a>  </td>
+                    <td>{{ project.date_start }}  </td>
+                    <td>{{ project.token }}  </td>
+                    <td>{{ project.date_end }}  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
         </div>
 {% endblock %}
