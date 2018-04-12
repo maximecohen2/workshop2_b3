@@ -10,8 +10,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item active">Home</li>
     </ol>
-
-    <!-- Liste des demandes -->
+    <!-- Icon Cards-->
     <div class="card mb-3">
         <div class="card-header">
             <i class="fa fa-table"></i> Mes demandes
@@ -59,24 +58,28 @@
         </div>
     </div>
 
-    <!-- Liste des projets-->
+    <!-- Card Columns Example Social Feed-->
     <div class="card mb-3">
         <div class="card-header">
             <i class="fa fa-newspaper-o"></i> Liste des projets
         </div>
         <div class="card-body">
             <div class="row">
-                {% for i in "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" %}
+                {% for project in projects %}
                     <div class="col-sm-4">
                         <div class="card mb-3">
                             <div class="card-body">
-                                <a href="#">
-                                    <img class="card-img-top img-fluid w-100" src="{% static 'img/2.jpg' %}" alt="">
+                                <a href="{% url 'detailProject' project.id %}">
+                                    {% if project.image %}
+                                        <img class="card-img-top img-fluid w-100" src="{{ project.image.url }}" alt="">
+                                    {% else %}
+                                        <img class="card-img-top img-fluid w-100" src="" alt="">
+                                    {% endif %}
                                 </a>
                                 <div class="card-body">
-                                    <h6 class="card-title mb-1"><a href="#">Projet FinTech</a></h6>
+                                    <h6 class="card-title mb-1"><a href="{% url 'detailProject' project.id %}">{{ project.name }}</a></h6>
                                     <p class="card-text small">
-                                        Nunc et semper mauris, eu varius mauris.
+                                        {{ project.description }}
                                     </p>
                                 </div>
                             </div>
@@ -86,5 +89,6 @@
             </div>
         </div>
     </div>
+
 
 {% endblock %}

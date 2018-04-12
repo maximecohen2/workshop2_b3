@@ -10,6 +10,7 @@ class Project(models.Model):
     name = models.CharField(max_length=100, verbose_name="nom")
     description = models.TextField(blank=True, verbose_name="description")
     file = models.FileField(verbose_name="fichier", null=True, blank=True)
+    image = models.ImageField(verbose_name="image", null=True, blank=True)
     date_start = models.DateField(verbose_name='date de depart du projet')
     date_end = models.DateField(verbose_name='date de fin du projet')
     token = models.IntegerField(verbose_name='nombre de jetons par groupes')

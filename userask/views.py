@@ -5,6 +5,7 @@ from django.views.generic import *
 from django.contrib.auth import authenticate, login, logout
 from django.http import *
 
+from project.models import Project, Team
 from userask.models import UserAsk
 
 
@@ -30,11 +31,12 @@ class LogoutUserAsk(LoginRequiredMixin, TemplateView):
 
 
 class HomeUserAsk(LoginRequiredMixin, TemplateView):
-    template_name = "home-e.html"
+    template_name = "user/home.html"
 
     def get_context_data(self, **kwargs):
         context = super(HomeUserAsk, self).get_context_data(**kwargs)
         context['page_title'] = "Accueil"
+        context['projects'] = Project.objects.filter(team__users=self.request.user.id)
         return context
 
 

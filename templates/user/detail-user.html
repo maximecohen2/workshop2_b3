@@ -16,7 +16,11 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-sm-8 my-auto">
-                            <img class ="avatar_img" src="{{ user.userask.image.url }}" alt="logo.png"/>
+                            {% if user.userask.image %}
+                                <img class ="avatar_img" src="{{ user.userask.image.url }}" alt="logo.png"/>
+                            {% else %}
+                                <img class ="avatar_img" src="" alt="logo.png"/>
+                            {% endif %}
                         </div>
                         <div class="col-sm-4  my-auto">
                             <div class="mb-0 text-muted">Prénom :</div>
