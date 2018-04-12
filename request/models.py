@@ -4,6 +4,7 @@ from project.models import Team
 
 
 class Request(models.Model):
+    cout = models.PositiveIntegerField(verbose_name='cout en token')
     title = models.CharField(verbose_name="Titre", max_length=50)
     QUESTION = 0
     NEW_TEAM = 1
@@ -25,7 +26,7 @@ class Request(models.Model):
         (ACCEPTED, "Accepté"),
         (REFUSED, "Refusé")
     )
-    Statut = models.IntegerField(choices=TYPE_STATUT, default=WAITING)
+    statut = models.IntegerField(choices=TYPE_STATUT, default=WAITING)
 
     class Meta:
         verbose_name = "Demande"

@@ -20,37 +20,31 @@
               <thead>
                 <tr>
                   <th>Date demande</th>
-                  <th>Groupe</th>
+                  <th>Cout</th>
                   <th>Intervenant</th>
-                  <th>Statut</th>
+                  <th>Demande</th>
+                  <th>Statuts</th>
                 </tr>
               </thead>
               <tfoot>
                 <tr>
                   <th>Date demande</th>
-                  <th>Groupe</th>
+                  <th>Cout</th>
                   <th>Intervenant</th>
-                  <th>Statut</th>
+                  <th>Demande</th>
+                  <th>Statuts</th>
                 </tr>
               </tfoot>
               <tbody>
-                <tr>
-                  <td>10/04/2018</td>
-                  <td>AskMe</td>
-                  <td>Michel Gillet</td>
-                  <td><a href="#">A traiter</a></td>
-                </tr>
-                <tr>
-                  <td>10/04/2018</td>
-                  <td>Les inconnus</td>
-                  <td>Patrice Got</td>
-                  <td><a href="#"Traitée</td>
-                </tr>
-                <tr>
-                  <td>12/04/2018</td>
-                  <td>Big Flo & Oli</td>
-                  <td>Philippe Rouchaud</td>
-                  <td>Annulée</td>
+                {% for request in requests %}
+                    <tr>
+                        <td><a href="{% url 'detailRequest' request.id %}">{{ request.date }}</a>  </td>
+                        <td>{{ request.cout }}  </td>
+                        <td>{{ request.intervenant }}  </td>
+                        <td>{{ request.type }}  </td>
+                        <td>{{ request.statut }}  </td>
+                    </tr>
+              {% endfor %}
                 </tr>
               </tbody>
             </table>
