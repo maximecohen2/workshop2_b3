@@ -33,9 +33,9 @@
                             <div class="text-muted">Jetons attribués au projet : {{ project.token }}</div>
                         </div>
                         <div class="col-sm-4  my-auto">
-                            <div class="mb-1"><a href="#">Créer un groupe pour ce projet</a></div>
+                            <div class="mb-1"><a data-toggle="popover" title="Popover Header" href="{% url 'createGroup' %}">Créer un groupe pour ce projet</a></div>
                             <hr>
-                          <div class="mb-1 text-muted"><a href="#">Rejoindre un groupe sur ce projet</a></div>
+                          <div class="mb-1 text-muted"><a href="{% url 'updateGroup' %}">Rejoindre un groupe sur ce projet</a></div>
                         </div>
                     </div>
                 </div>

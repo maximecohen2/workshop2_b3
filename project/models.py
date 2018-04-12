@@ -1,5 +1,6 @@
 from django.core.validators import MinValueValidator
 from django.db import models
+from userask.models import UserAsk
 
 # Create your models here.
 
@@ -22,8 +23,9 @@ class Team(models.Model):
     name = models.CharField(max_length=100, verbose_name="nom")
     project = models.ForeignKey('Project', on_delete=models.PROTECT, verbose_name="projet")
     max_user = models.PositiveIntegerField(verbose_name="nombre d'étudiant max", validators=[MinValueValidator(1)])
-    private = models.BooleanField(verbose_name="privé")
+    private = models.BooleanField(verbose_name="privé", default=True)
     token_remain = models.PositiveIntegerField("token restant")
+    users = models.ManyToManyField(UserAsk, verbose_name='all users')
 
     class Meta:
         verbose_name = "Groupe"

@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
+from django.urls import reverse_lazy
 from django.views.generic import *
 from project.models import *
 import datetime
@@ -25,19 +26,14 @@ class ListProject(ListView):
 
 
 class CreateProject(CreateView):
-    name = None
-    description = None
-    file = None
-    date_start = datetime.datetime.now()
-    date_end = date_start + datetime.timedelta(days=270)
+    model = Project
+    fields = ['name', 'description', 'file', 'date_start', 'date_end', 'token']
+    success_url = reverse_lazy('listProject')
 
 
 class DeleteProject(DeleteView):
     template_name = 'delete.html'
-
-    def get_object(self, queryset=None):
-        code = self.kwargs.get('code', None)
-        return render(self.request, self.template_name, {})
+    model = Team
 
 
 class UpdateProject(UpdateView):
@@ -56,7 +52,7 @@ class DetailGroup(DetailView):
 
 
 class ListGroup(ListView):
-    template_name = 'team/detail-team.html'
+    template_name = 'team/list-team.html'
     model = Team
     context_object_name = "groups"
 
@@ -67,19 +63,13 @@ class ListGroup(ListView):
 
 class CreateGroup(CreateView):
     model = Team
-    name = None
-    project = None
-    max_user = None
-    private = None
-    token_remain = None
+    fields = ['name', 'project', 'max_user', 'private', 'token_remain']
+    success_url = reverse_lazy('listGroup')
 
 
 class DeleteGroup(DeleteView):
     template_name = 'delete.html'
-
-    def get_object(self, queryset=None):
-        code = self.kwargs.get('code', None)
-        return render(self.request, self.template_name, {})
+    model = Team
 
 
 class UpdateGroup(UpdateView):

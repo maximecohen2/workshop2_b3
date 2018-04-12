@@ -21,7 +21,7 @@
                 <tr>
                   <th>Nom</th>
                   <th>Nombre de membres</th>
-                  <th>Jetons Attribués</th>
+                  <th>Jetons Restant</th>
                   <th>Projet</th>
                 </tr>
               </thead>
@@ -29,19 +29,22 @@
                 <tr>
                   <th>Nom</th>
                   <th>Nombre de membres</th>
-                  <th>Jetons Attribués</th>
+                  <th>Jetons Restant</th>
                   <th>Projet</th>
                 </tr>
               </tfoot>
               <tbody>
-              {% for project in projects %}
-                <tr>
-                  <td><a href="#">{{ project.name }}</a>  </td>
-                    <td>{{ project.date_start }}  </td>
-                    <td>{{ project.token }}  </td>
-                    <td>{{ project.date_end }}  </td>
-                </tr>
+              {% for group in groups %}
+                  {% if  group.private %}
+                    <tr>
+                      <td><a href="{% url 'detailGroup' group.id %}">{{ group.name }}</a>  </td>
+                        <td>{{ group.users }}  </td>
+                        <td>{{ group.token_remain }}  </td>
+                        <td>{{ group.project }}  </td>
+                    </tr>
+                      {% endif %}
               {% endfor %}
+
               </tbody>
             </table>
           </div>
