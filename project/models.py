@@ -11,8 +11,7 @@ class Project(models.Model):
     file = models.FileField(verbose_name="fichier", null=True, blank=True)
     date_start = models.DateField(verbose_name='date de depart du projet')
     date_end = models.DateField(verbose_name='date de fin du projet')
-    token = models.IntegerField(verbose_name='nombre de jetons actuel')
-    token_used = models.IntegerField(verbose_name='nombre de jetons utilisé')
+    token = models.IntegerField(verbose_name='nombre de jetons par groupes')
 
     class Meta:
         verbose_name = "Projet"
@@ -24,6 +23,7 @@ class Team(models.Model):
     project = models.ForeignKey('Project', on_delete=models.PROTECT, verbose_name="projet")
     max_user = models.PositiveIntegerField(verbose_name="nombre d'étudiant max", validators=[MinValueValidator(1)])
     private = models.BooleanField(verbose_name="privé")
+    token_remain = models.PositiveIntegerField("token restant")
 
     class Meta:
         verbose_name = "Groupe"
