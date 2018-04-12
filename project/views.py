@@ -32,7 +32,7 @@ class ListProject(ListView):
 
 class CreateProject(CreateView):
     model = Project
-    fields = ['name', 'description', 'file', 'date_start', 'date_end', 'token']
+    fields = ['name', 'description', 'file', 'date_start', 'date_end', 'token', 'image']
     success_url = reverse_lazy('listProject')
 
 

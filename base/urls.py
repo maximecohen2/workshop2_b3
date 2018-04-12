@@ -35,13 +35,12 @@ urlpatterns = [
     url(r'^team$', login_required(TemplateView.as_view(template_name='team/detail-team.html'))),
     url(r'^list-team$', login_required(TemplateView.as_view(template_name='team/list-team.html'))),
     url(r'^jetons-list', login_required(TemplateView.as_view(template_name='jetons-list.html'))),
-    url(r'^list-request', login_required(TemplateView.as_view(template_name='request/list-request.html'))),
-    url(r'^request', login_required(TemplateView.as_view(template_name='request/request.html'))),
     url(r'^project/', include('project.urls')),
+    url(r'^user/', include('userask.urls')),
+    url(r'^request/', include('request.urls')),
     url(r'^home-e$', login_required(TemplateView.as_view(template_name='home-e.html'))),
     url(r'^home-i$', login_required(TemplateView.as_view(template_name='home-i.html'))),
     url(r'^home-p$', login_required(TemplateView.as_view(template_name='home-p.html'))),
-    url(r'^project$', login_required(TemplateView.as_view(template_name='project/detail-project.html'))),
 ]
 
 if settings.DEBUG is True:

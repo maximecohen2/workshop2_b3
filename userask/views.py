@@ -41,7 +41,15 @@ class HomeUserAsk(LoginRequiredMixin, TemplateView):
 
 
 class ListUserAsk(LoginRequiredMixin, ListView):
+    model = User
     template_name = "user/list-user.html"
+    context_object_name = 'users'
+
+
+class DetailUserAsk(LoginRequiredMixin, DetailView):
+    model = User
+    template_name = "user/detail-user.html"
+
 
 
 class ProfilUserAsk(LoginRequiredMixin, TemplateView):

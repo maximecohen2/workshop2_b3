@@ -38,7 +38,7 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Jetons">
-                <a class="nav-link" href="jetons-list">
+                <a class="nav-link" href="{% url 'listRequest' %}">
                     <i class="fa fa-fw fa-question"></i>
                     <span class="nav-link-text">Demandes</span>
                 </a>
@@ -82,7 +82,7 @@
                         <a href="{% url 'profil' %}">Mon profile</a>
                     </li>
                     <li>
-                        <a href="project-list">Liste des utilisateurs</a>
+                        <a href="{% url 'listUser' %}">Liste des utilisateurs</a>
                     </li>
                 </ul>
             </li>

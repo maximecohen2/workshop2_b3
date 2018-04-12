@@ -24,7 +24,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-sm-4 my-auto">
-                            <img class ="avatar_img" src="{% static 'img/FinTech.jpg' %}" alt="logo.png"/>
+                            <img class ="avatar_img" src="{% if project.image %}{{ project.image.url }}{% endif %}" alt="logo.png"/>
                         </div>
                         <div class="col-sm-4  my-auto">
                             <div class="mb-1">Description du projet :</div>
@@ -71,7 +71,7 @@
               {% for team in teams %}
                   <tr>
                       <td><a href="{% url 'detailGroup' team.id %}">{{ team.name }}</a>  </td>
-                      <td>{{ team.users.count }}  </td>
+                      <td>{{ team.users.count }} / {{ team.max_user }} </td>
                       <td>{{ team.token_remain }}  </td>
                   </tr>
               {% endfor %}

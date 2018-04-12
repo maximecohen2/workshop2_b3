@@ -1,20 +1,31 @@
 from django.db import models
 
-# Create your models here.
+from project.models import Team
 
 
 class Request(models.Model):
-    title = models.CharField(verbose_name="Titre")
+    title = models.CharField(verbose_name="Titre", max_length=50)
     QUESTION = 0
     NEW_TEAM = 1
-    DATE = 2
+    MEETING = 2
     TYPE_CHOICE = (
         (QUESTION, "Question"),
         (NEW_TEAM, "Nouveau groupe"),
-        (DATE, "Rendez-vous")
+        (MEETING, "Rendez-vous")
     )
     type = models.IntegerField(choices=TYPE_CHOICE, default=QUESTION)
-
+    date = models.DateField(verbose_name='Demand date')
+    team = models.ForeignKey(Team, verbose_name='Demands by team', on_delete=models.CASCADE)
+    intervenant = models.CharField(verbose_name='Intervenant', max_length=50)
+    WAITING = 0
+    ACCEPTED = 1
+    REFUSED = 2
+    TYPE_STATUT = (
+        (WAITING, "En attente"),
+        (ACCEPTED, "Accepté"),
+        (REFUSED, "Refusé")
+    )
+    Statut = models.IntegerField(choices=TYPE_STATUT, default=WAITING)
 
     class Meta:
         verbose_name = "Demande"
