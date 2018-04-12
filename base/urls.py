@@ -35,7 +35,6 @@ urlpatterns = [
     url(r'^team$', login_required(TemplateView.as_view(template_name='team/detail-team.html'))),
     url(r'^jetons-list', login_required(TemplateView.as_view(template_name='jetons-list.html'))),
     url(r'^project/', include('project.urls')),
-
     url(r'^home-e$', login_required(TemplateView.as_view(template_name='home-e.html'))),
     url(r'^home-i$', login_required(TemplateView.as_view(template_name='home-i.html'))),
     url(r'^home-p$', login_required(TemplateView.as_view(template_name='home-p.html'))),
